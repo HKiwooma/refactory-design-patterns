@@ -20,18 +20,19 @@ class Laptop {
     this.model = gModel;
     this.manufacturer = gManufacturer;
     this.price = gPrice;
-    this.operatingSystem = gPperatingSystem;
-    this.serialNumber = gPerialNumber;
+    this.operatingSystem = gOperatingSystem;
+    this.serialNumber = gSerialNumber;
     this.manufactureDate = gManufactureDate;
   }
 
   printableString() {
     return `This laptop has the following spectication \n HDD size: ${this.hddSize} \n RAM size: ${this.ram} \n CPU speed: ${this.cpuSpeed} \n Battery Life: ${this.batteryLife} \n Screen size: ${this.screenSize} \n Model: ${this.model} \n Manufacture: ${this.manufacturer} \n Price: ${this.price} \n Operating System: ${this.operatingSystem} \n Serial Number: ${this.serialNumber} \n Date of Manufacture: ${this.manufactureDate} \n`;
   }
-
   laptopAge() {
-    const currentYear = new Date().getFullYear();
-    return currentYear - this.manufactureDate.getFullYear();
+    const today = new Date(),
+      manufacturingDate = new Date(this.manufactureDate),
+      age = today.getFullYear() - manufacturingDate;
+    return age;
   }
 
   adjustPrice() {
@@ -41,7 +42,6 @@ class Laptop {
     } else {
       return this.price;
     }
-  
+  }
 }
-
 module.exports = Laptop;
