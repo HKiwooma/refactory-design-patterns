@@ -11,11 +11,11 @@ const hp = new Laptop(
   1200,
   'debian 10',
   80293845480,
-  1989,
+  2020,
 );
 
  test('Test laptop age: ', () => {
-   expect(hp.laptopAge()).toBe(31);
+   expect(hp.laptopAge()).toBe(0);
  });
  test('Test that checks and adjust laptop price: ', () => {
    expect(hp.adjustPrice()).not.toBe(1200);
