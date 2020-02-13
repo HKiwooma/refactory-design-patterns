@@ -1,8 +1,8 @@
 class Cartitem {
-  constructor(description, quantity, unitPrice) {
-    this.description = description;
-    this.quantity = quantity;
-    this.unitPrice = unitPrice;
+  constructor(gDescription, gQuantity, gUnitPrice) {
+    this.description = gDescription;
+    this.quantity = gQuantity;
+    this.unitPrice = gUnitPrice;
   }
 
   total() {
@@ -10,9 +10,9 @@ class Cartitem {
   }
   printableString() {
     return `Description: ${this.getDescription()} 
-    \n Quantity: ${this.quantity}
-    \n Unit Price: ${this.getUnitPrice()} 
-    \n Total: ${this.total()}`;
+    Quantity: ${this.quantity}
+    Unit Price: ${this.getUnitPrice()} 
+    Total: ${this.total()} \n`;
   }
   getUnitPrice() {
     return this.unitPrice;

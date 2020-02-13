@@ -1,10 +1,10 @@
 class Laptop {
-  constructor(brand, HDD, RAM, price, manufactureYear) {
-    this.brand = brand;
-    this.HDD = HDD;
-    this.RAM = RAM;
-    this.price = price;
-    this.manufactureYear = manufactureYear;
+  constructor(gBrand, gHDD, gRAM, gPrice, gManufactureYear) {
+    this.brand = gBrand;
+    this.HDD = gHDD;
+    this.RAM = gRAM;
+    this.price = gPrice;
+    this.manufactureYear = gManufactureYear;
     this.currentYear = new Date().getFullYear();
   }
   checkBrand() {
