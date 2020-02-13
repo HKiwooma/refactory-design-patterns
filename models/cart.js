@@ -15,25 +15,3 @@ class Cart {
 }
 
 module.exports = Cart;
-
-/*
-class Cart {
-  constructor(gName, gAddress, gPaymentMethod, gDate, gStatus) {
-    this.name = gName;
-    this.address = gAddress;
-    this.paymentMethod = gPaymentMethod;
-    this.date = gDate;
-    this.status = gStatus;
-    this.items = [];
-  }
-  addCartItem(item) {
-    this.items.push(item);
-  }
-  printableString() {
-      return this.items.map(this.itemPrintableString).join('\n');
-  }
-    itemPrintableString(item) {
-      return item.printableString();
-  }
-}
-module.exports = Cart;*/

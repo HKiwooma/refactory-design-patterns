@@ -9,9 +9,10 @@ class Cartitem {
     return this.quantity * this.getUnitPrice();
   }
   printableString() {
-    return `${this.getDescription()} ${
-      this.quantity
-    } ${this.getUnitPrice()} ${this.total()}`;
+    return `Description: ${this.getDescription()} 
+    \n Quantity: ${this.quantity}
+    \n Unit Price: ${this.getUnitPrice()} 
+    \n Total: ${this.total()}`;
   }
   getUnitPrice() {
     return this.unitPrice;
@@ -22,19 +23,3 @@ class Cartitem {
 }
 
 module.exports = Cartitem;
-
-/*
-class CartItem {
-  constructor(gDescription, gQuantity, gUnitPrice) {
-    this.description = gDescription;
-    this.quantity = gQuantity;
-    this.unitPrice = gUnitPrice;
-  }
-  total() {
-    return this.quantity * this.unitPrice;
-  }
-  listOfItem() {
-    return `Description: ${this.description} \n Quantity: ${this.quantity} \n Unit Price: ${this.unitPrice} \n Total: ${this.total}`;
-  }
-}
-module.exports = CartItem;*/
